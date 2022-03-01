@@ -36,7 +36,7 @@ func main() {
 		*(*unsafe.Pointer)(unsafe.Pointer(&md5s[i])) = unsafe.Pointer(&buf)
 		*(*uintptr)(unsafe.Add(unsafe.Pointer(&md5s[i]), unsafe.Sizeof(uintptr(0)))) = uintptr(16)
 	}
-	r := registry.NewRegedit("reilia.fumiama.top:32664", "fumiama", os.Getenv("REILIA_SPS"))
+	r := registry.NewRegedit("reilia.westeurope.cloudapp.azure.com:32664", "fumiama", os.Getenv("REILIA_SPS"))
 	err := r.Connect()
 	if err != nil {
 		panic(err)

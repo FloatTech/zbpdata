@@ -24,5 +24,6 @@ jobs:
         run: |
           ls
           go mod init updater
+          sed -i '1,3d' main.go
           go mod tidy
           go run main.go

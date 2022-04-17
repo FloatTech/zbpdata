@@ -46,7 +46,7 @@ func main() {
 		panic(err)
 	}
 	defer r.Close()
-	do1024 := func(k, v string) {
+	do1024 := func(k, v string) (err error) {
 		for i := 0; i < 1024; i++ {
 			err = r.Set(k, v)
 			if err == nil {
@@ -54,12 +54,16 @@ func main() {
 			}
 			fmt.Println("accqiring set lock, retry times:", i)
 		}
+		return
 	}
 	var wg sync.WaitGroup
 	wg.Add(len(files))
 	for i, fn := range files {
 		go func(i int, fn string) {
-			do1024("data/"+fn, md5s[i])
+			err := do1024("data/"+fn, md5s[i])
+			if err != nil {
+				panic(err)
+			}
 			fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
 			wg.Done()
 		}(i, fn)

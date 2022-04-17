@@ -55,7 +55,6 @@ func main() {
 			fmt.Println("accqiring set lock, retry times:", i)
 		}
 	}
-	do1024("__setlock__", "fill")
 	var wg sync.WaitGroup
 	wg.Add(len(files))
 	for i, fn := range files {

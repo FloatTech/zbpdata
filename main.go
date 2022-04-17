@@ -53,7 +53,6 @@ func main() {
 			break
 		}
 		fmt.Println("accqiring set lock, retry times:", i)
-		process.SleepAbout1sTo2s()
 	}
 	var wg sync.WaitGroup
 	wg.Add(len(files))

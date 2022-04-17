@@ -47,6 +47,14 @@ func main() {
 		panic(err)
 	}
 	defer r.Close()
+	for i := 0; i < 1024; i++ {
+		err = r.Set("__setlock__", "fill")
+		if err == nil {
+			break
+		}
+		fmt.Println("accqiring set lock, retry times:", i)
+		process.SleepAbout1sTo2s()
+	}
 	var wg sync.WaitGroup
 	wg.Add(len(files))
 	for i, fn := range files {

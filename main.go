@@ -10,6 +10,7 @@ import (
 	"io/fs"
 	"os"
 	"strings"
+	"sync"
 	"unicode"
 	"unsafe"
 
@@ -44,12 +45,18 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	defer r.Close()
+	var wg sync.WaitGroup
+	wg.Add(len(files))
 	for i, fn := range files {
-		fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
-		err = r.Set("data/"+fn, md5s[i])
-		if err != nil {
-			panic(err)
-		}
+		go func(i int, fn string) {
+			defer wg.Done()
+			err = r.Set("data/"+fn, md5s[i])
+			fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
+			if err != nil {
+				panic(err)
+			}
+		}(i, fn)
 	}
-	r.Close()
+	wg.Wait()
 }

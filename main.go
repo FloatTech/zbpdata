@@ -14,6 +14,7 @@ import (
 	"unicode"
 	"unsafe"
 
+	"github.com/FloatTech/zbputils/process"
 	"github.com/fumiama/go-registry"
 	"github.com/wdvxdr1123/ZeroBot/utils/helper"
 )
@@ -46,26 +47,24 @@ func main() {
 		panic(err)
 	}
 	defer r.Close()
-	do1024 := func(k, v string) (err error) {
-		for i := 0; i < 1024; i++ {
-			err = r.Set(k, v)
-			if err == nil {
-				break
-			}
-			fmt.Println("accqiring set lock, retry times:", i)
-		}
-		return
-	}
 	var wg sync.WaitGroup
 	wg.Add(len(files))
 	for i, fn := range files {
 		go func(i int, fn string) {
-			err := do1024("data/"+fn, md5s[i])
-			if err != nil {
-				panic(err)
+			defer wg.Done()
+			for c := 0; c < 5; c++ {
+				err = r.Set("data/"+fn, md5s[i])
+				fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
+				if err == nil {
+					break
+				}
+				if c >= 4 {
+					panic("ERROR:" + err.Error() + "max retry times exceeded")
+				} else {
+					fmt.Println("ERROR:", err, ", retry times:", c)
+				}
+				process.SleepAbout1sTo2s()
 			}
-			fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
-			wg.Done()
 		}(i, fn)
 	}
 	wg.Wait()

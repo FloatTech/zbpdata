@@ -1,3 +1,6 @@
+//go:build ignore
+// +build ignore
+
 package main
 
 import (
@@ -36,17 +39,29 @@ func main() {
 		*(*unsafe.Pointer)(unsafe.Pointer(&md5s[i])) = unsafe.Pointer(&buf)
 		*(*uintptr)(unsafe.Add(unsafe.Pointer(&md5s[i]), unsafe.Sizeof(uintptr(0)))) = uintptr(16)
 	}
-	r := registry.NewRegedit("reilia.westeurope.cloudapp.azure.com:32664", "fumiama", os.Getenv("REILIA_SPS"))
+	r := registry.NewRegedit("reilia.fumiama.top:32664", "fumiama", os.Getenv("REILIA_SPS"))
 	err := r.Connect()
 	if err != nil {
 		panic(err)
 	}
 	for i, fn := range files {
-		fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
-		err = r.Set("data/"+fn, md5s[i])
-		if err != nil {
-			panic(err)
+		for c := 0; c < 5; c++ {
+			err = r.Set("data/"+fn, md5s[i])
+			fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
+			if err == nil {
+				break
+			}
+			if c >= 4 {
+				panic("ERROR:" + err.Error() + "max retry times exceeded")
+			} else {
+				fmt.Println("ERROR:", err, ", retry times:", c)
+			}
+			_ = r.Close()
+			err = r.Connect()
+			if err != nil {
+				panic(err)
+			}
 		}
 	}
-	r.Close()
+	_ = r.Close()
 }

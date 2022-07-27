@@ -174,5 +174,453 @@
             "reverseDescription": "未完成；无法达到计划中的成就；因准备不足而失败；中途无法在进行；不完全燃烧；一时不顺利；饱和状态；烦恼延续；精神松弛；个人惯用的表现方式；因不成熟而 使情感受挫；合谋；态度不够圆融",
             "imgUrl": "MajorArcana/21.ppg"
         }
+    },
+    "22": {
+        "name": "圣杯ACE",
+        "info": {
+            "description": "新恋情或新友情、精神愉悦、心灵满足",
+            "reverseDescription": "情感缺失、缺乏交流、虚情假意",
+            "imgUrl": "MinorArcana/Cups/圣杯-01.png"
+        }
+    },
+    "23": {
+        "name": "圣杯2",
+        "info": {
+            "description": "和谐对等的关系、情侣间的相互喜爱、合作顺利",
+            "reverseDescription": "两性关系趋于极端、情感的割裂、双方不平等、冲突",
+            "imgUrl": "MinorArcana/Cups/圣杯-02.png"
+        }
+    },
+    "24": {
+        "name": "圣杯3",
+        "info": {
+            "description": "达成合作、努力取得成果",
+            "reverseDescription": "乐极生悲、无法达成共识、团队不和",
+            "imgUrl": "MinorArcana/Cups/圣杯-03.png"
+        }
+    },
+    "25": {
+        "name": "圣杯4",
+        "info": {
+            "description": "身心俱疲、缺乏动力、对事物缺乏兴趣、情绪低潮",
+            "reverseDescription": "新的人际关系、有所行动、脱离低潮期",
+            "imgUrl": "MinorArcana/Cups/圣杯-04.png"
+        }
+    },
+    "26": {
+        "name": "圣杯5",
+        "info": {
+            "description": "过度注意失去的事物、自责、自我怀疑、因孤傲而拒绝外界帮助",
+            "reverseDescription": "走出悲伤、破釜沉舟、东山再起",
+            "imgUrl": "MinorArcana/Cups/圣杯-05.png"
+        }
+    },
+    "27": {
+        "name": "圣杯6",
+        "info": {
+            "description": "思乡、美好的回忆、纯真的情感、简单的快乐、安全感",
+            "reverseDescription": "沉溺于过去、不美好的回忆、不甘受束缚",
+            "imgUrl": "MinorArcana/Cups/圣杯-06.png"
+        }
+    },
+    "28": {
+        "name": "圣杯7",
+        "info": {
+            "description": "不切实际的幻想、不踏实的人际关系、虚幻的情感、生活混乱",
+            "reverseDescription": "看清现实、对物质的不满足、做出明智的选择",
+            "imgUrl": "MinorArcana/Cups/圣杯-07.png"
+        }
+    },
+    "29": {
+        "name": "圣杯8",
+        "info": {
+            "description": "离开熟悉的人事物、不沉醉于目前的成果、经考虑后的行动",
+            "reverseDescription": "犹豫不决、失去未来的规划、维持现状",
+            "imgUrl": "MinorArcana/Cups/圣杯-08.png"
+        }
+    },
+    "30": {
+        "name": "圣杯9",
+        "info": {
+            "description": "愿望极有可能实现、满足现状、物质与精神富足",
+            "reverseDescription": "物质受损失、不懂节制、寻求更高层次的快乐",
+            "imgUrl": "MinorArcana/Cups/圣杯-09.png"
+        }
+    },
+    "31": {
+        "name": "圣杯10",
+        "info": {
+            "description": "团队和谐、人际关系融洽、家庭和睦",
+            "reverseDescription": "团队不和、人际关系不和、冲突",
+            "imgUrl": "MinorArcana/Cups/圣杯-10.png"
+        }
+    },
+    "32": {
+        "name": "圣杯侍从",
+        "info": {
+            "description": "情感的表达与奉献、积极的消息即将传来、情感的追求但不成熟",
+            "reverseDescription": "情感的追求但错误、感情暧昧、过度执着于情感或问题",
+            "imgUrl": "MinorArcana/Cups/圣杯侍从.png"
+        }
+    },
+    "33": {
+        "name": "圣杯国王",
+        "info": {
+            "description": "创造力、决策力、某方面的专家、有条件的分享或交换",
+            "reverseDescription": "表里不一、行为另有所图、对自我创造力的不信任",
+            "imgUrl": "MinorArcana/Cups/圣杯国王.png"
+        }
+    },
+    "34": {
+        "name": "圣杯王后",
+        "info": {
+            "description": "感情丰富而细腻、重视直觉、感性的思考",
+            "reverseDescription": "过度情绪化、用情不专、心灵的孤立",
+            "imgUrl": "MinorArcana/Cups/圣杯皇后.png"
+        }
+    },
+    "35": {
+        "name": "圣杯骑士",
+        "info": {
+            "description": "在等待与行动之间做出决定、新的机会即将到来",
+            "reverseDescription": "用情不专、消极的等待、对于情感的行动错误",
+            "imgUrl": "MinorArcana/Cups/圣杯骑士.png"
+        }
+    },
+    "36": {
+        "name": "星币ACE",
+        "info": {
+            "description": "新的机遇、顺利发展、物质回报",
+            "reverseDescription": "金钱上的损失、发展不顺、物质丰富但精神虚空",
+            "imgUrl": "MinorArcana/Pentacles/星币-01.png"
+        }
+    },
+    "37": {
+        "name": "星币2",
+        "info": {
+            "description": "收支平衡、财富的流通、生活的波动与平衡",
+            "reverseDescription": "用钱过度、难以维持平衡、面临物质的损失",
+            "imgUrl": "MinorArcana/Pentacles/星币-02.png"
+        }
+    },
+    "38": {
+        "name": "星币3",
+        "info": {
+            "description": "团队合作、沟通顺畅、工作熟练、关系稳定",
+            "reverseDescription": "分工不明确、人际关系不和、专业技能不足",
+            "imgUrl": "MinorArcana/Pentacles/星币-03.png"
+        }
+    },
+    "39": {
+        "name": "星币4",
+        "info": {
+            "description": "安于现状、吝啬、守财奴、财富停滞、精神匮乏",
+            "reverseDescription": "入不敷出、奢侈无度、挥霍",
+            "imgUrl": "MinorArcana/Pentacles/星币-04.png"
+        }
+    },
+    "40": {
+        "name": "星币5",
+        "info": {
+            "description": "经济危机、同甘共苦、艰难时刻",
+            "reverseDescription": "居住问题、生活混乱、劳燕分飞",
+            "imgUrl": "MinorArcana/Pentacles/星币-05.png"
+        }
+    },
+    "41": {
+        "name": "星币6",
+        "info": {
+            "description": "慷慨、给予、礼尚往来、财务稳定且乐观",
+            "reverseDescription": "自私、暗藏心机、负债或在情义上亏欠于人",
+            "imgUrl": "MinorArcana/Pentacles/星币-06.png"
+        }
+    },
+    "42": {
+        "name": "星币7",
+        "info": {
+            "description": "等待时机成熟、取得阶段性成果、思考计划",
+            "reverseDescription": "事倍功半、投资失利、踟蹰不决",
+            "imgUrl": "MinorArcana/Pentacles/星币-07.png"
+        }
+    },
+    "43": {
+        "name": "星币8",
+        "info": {
+            "description": "工作专注、技能娴熟、进取心、做事有条理",
+            "reverseDescription": "精力分散、工作乏味、工作产出不佳",
+            "imgUrl": "MinorArcana/Pentacles/星币-08.png"
+        }
+    },
+    "44": {
+        "name": "星币9",
+        "info": {
+            "description": "事业收获、持续为自己创造有利条件、懂得理财储蓄",
+            "reverseDescription": "失去财富、舍弃金钱追求生活、管理能力欠缺",
+            "imgUrl": "MinorArcana/Pentacles/星币-09.png"
+        }
+    },
+    "45": {
+        "name": "星币10",
+        "info": {
+            "description": "团队和谐、成功的事业伙伴、家族和谐",
+            "reverseDescription": "团队不和、投资合伙暂缓、家庭陷入不和",
+            "imgUrl": "MinorArcana/Pentacles/星币-10.png"
+        }
+    },
+    "46": {
+        "name": "星币侍从",
+        "info": {
+            "description": "善于思考和学习、求知欲旺盛、与知识或者研究工作有关的好消息",
+            "reverseDescription": "知识贫乏、自我认知不足、金钱上面临损失、视野狭窄",
+            "imgUrl": "MinorArcana/Pentacles/星币侍从.png"
+        }
+    },
+    "47": {
+        "name": "星币国王",
+        "info": {
+            "description": "成功人士、追求物质、善于经营、值得信赖、成熟务实",
+            "reverseDescription": "缺乏经济头脑、缺乏信任、管理不善、失去信赖",
+            "imgUrl": "MinorArcana/Pentacles/星币国王.png"
+        }
+    },
+    "48": {
+        "name": "星币王后",
+        "info": {
+            "description": "成熟、繁荣、值得信赖、温暖、安宁",
+            "reverseDescription": "爱慕虚荣、生活浮华、态度恶劣",
+            "imgUrl": "MinorArcana/Pentacles/星币皇后.png"
+        }
+    },
+    "49": {
+        "name": "星币骑士",
+        "info": {
+            "description": "讲究效率、责任感赖、稳重、有计划",
+            "reverseDescription": "懈怠、思想保守、发展停滞不前",
+            "imgUrl": "MinorArcana/Pentacles/星币骑士.png"
+        }
+    },
+    "50": {
+        "name": "宝剑ACE",
+        "info": {
+            "description": "有进取心和攻击性、敏锐、理性、成功的开始",
+            "reverseDescription": "易引起争端、逞强而招致灾难、偏激专横、不公正的想法",
+            "imgUrl": "MinorArcana/Swords/宝剑-01.png"
+        }
+    },
+    "51": {
+        "name": "宝剑2",
+        "info": {
+            "description": "想法的对立、选择的时机、意见不合且暗流汹涌",
+            "reverseDescription": "做出选择但流言与欺诈会浮出水面、犹豫不决导致错失机会",
+            "imgUrl": "MinorArcana/Swords/宝剑-02.png"
+        }
+    },
+    "52": {
+        "name": "宝剑3",
+        "info": {
+            "description": "感情受到伤害、生活中出现麻烦、自怜自哀",
+            "reverseDescription": "心理封闭、情绪不安、逃避、伤害周边的人",
+            "imgUrl": "MinorArcana/Swords/宝剑-03.png"
+        }
+    },
+    "53": {
+        "name": "宝剑4",
+        "info": {
+            "description": "养精蓄锐、以退为进、放缓行动、留意总结",
+            "reverseDescription": "即刻行动、投入生活、未充分准备却慌忙应对",
+            "imgUrl": "MinorArcana/Swords/宝剑-04.png"
+        }
+    },
+    "54": {
+        "name": "宝剑5",
+        "info": {
+            "description": "矛盾冲突、不择手段伤害对方、赢得比赛却失去关系",
+            "reverseDescription": "找到应对方法、冲突有解决的可能性、双方愿意放下武器",
+            "imgUrl": "MinorArcana/Swords/宝剑-05.png"
+        }
+    },
+    "55": {
+        "name": "宝剑6",
+        "info": {
+            "description": "伤口迟迟没能痊愈、现在没有很好的对策、未来存在更多的艰难",
+            "reverseDescription": "深陷于困难、鲁莽地解决却忽视背后更大的问题、需要其他人的帮助或救援",
+            "imgUrl": "MinorArcana/Swords/宝剑-06.png"
+        }
+    },
+    "56": {
+        "name": "宝剑7",
+        "info": {
+            "description": "疏忽大意、有隐藏很深的敌人、泄密、非常手段或小伎俩无法久用",
+            "reverseDescription": "意想不到的好运、计划不周全、掩耳盗铃",
+            "imgUrl": "MinorArcana/Swords/宝剑-07.png"
+        }
+    },
+    "57": {
+        "name": "宝剑8",
+        "info": {
+            "description": "孤立无助、陷入艰难处境、受困于想法导致行动受阻",
+            "reverseDescription": "摆脱束缚、脱离危机、重新起步",
+            "imgUrl": "MinorArcana/Swords/宝剑-08.png"
+        }
+    },
+    "58": {
+        "name": "宝剑9",
+        "info": {
+            "description": "精神上的恐惧、害怕、焦虑、前路不顺的预兆",
+            "reverseDescription": "事情出现转机、逐渐摆脱困境、沉溺于过去、正视现实",
+            "imgUrl": "MinorArcana/Swords/宝剑-09.png"
+        }
+    },
+    "59": {
+        "name": "宝剑10",
+        "info": {
+            "description": "进展严重受阻、无路可走、面临绝境、重新归零的机会",
+            "reverseDescription": "绝处逢生、东山再起的希望、物极必反",
+            "imgUrl": "MinorArcana/Swords/宝剑-10.png"
+        }
+    },
+    "60": {
+        "name": "宝剑侍从",
+        "info": {
+            "description": "思维发散、洞察力、谨慎的判断",
+            "reverseDescription": "短见、做事虎头蛇尾、对信息不加以过滤分析",
+            "imgUrl": "MinorArcana/Swords/宝剑侍从.png"
+        }
+    },
+    "61": {
+        "name": "宝剑国王",
+        "info": {
+            "description": "公正、权威、领导力、冷静",
+            "reverseDescription": "思想偏颇、强加观念、极端、不择手段",
+            "imgUrl": "MinorArcana/Swords/宝剑国王.png"
+        }
+    },
+    "62": {
+        "name": "宝剑王后",
+        "info": {
+            "description": "理性、思考敏捷、有距离感、公正不阿",
+            "reverseDescription": "固执、想法偏激、高傲、盛气凌人",
+            "imgUrl": "MinorArcana/Swords/宝剑皇后.png"
+        }
+    },
+    "63": {
+        "name": "宝剑骑士",
+        "info": {
+            "description": "勇往直前的行动力、充满激情",
+            "reverseDescription": "计划不周、天马行空、缺乏耐心、做事轻率、自负",
+            "imgUrl": "MinorArcana/Swords/宝剑骑士.png"
+        }
+    },
+    "64": {
+        "name": "权杖4",
+        "info": {
+            "description": "和平繁荣、关系稳固、学业或事业发展稳定",
+            "reverseDescription": "局势失衡、稳固的基础被打破、人际关系不佳、收成不佳",
+            "imgUrl": "MinorArcana/Wands/权杖-04.png"
+        }
+    },
+    "65": {
+        "name": "权杖ACE",
+        "info": {
+            "description": "新的开端、新的机遇、燃烧的激情、创造力",
+            "reverseDescription": "新行动失败的可能性比较大、开端不佳、意志力薄弱",
+            "imgUrl": "MinorArcana/Wands/权杖-01.png"
+        }
+    },
+    "66": {
+        "name": "权杖2",
+        "info": {
+            "description": "高瞻远瞩、规划未来、在习惯与希望间做选择",
+            "reverseDescription": "犹豫不决、行动受阻、花费太多时间在选择上",
+            "imgUrl": "MinorArcana/Wands/权杖-02.png"
+        }
+    },
+    "67": {
+        "name": "权杖3",
+        "info": {
+            "description": "探索的好时机、身心灵的契合、领导能力、主导地位",
+            "reverseDescription": "合作不顺、欠缺领导能力、团队不和谐",
+            "imgUrl": "MinorArcana/Wands/权杖-03.png"
+        }
+    },
+    "68": {
+        "name": "权杖5",
+        "info": {
+            "description": "竞争、冲突、内心的矛盾、缺乏共识",
+            "reverseDescription": "不公平的竞争、达成共识",
+            "imgUrl": "MinorArcana/Wands/权杖-05.png"
+        }
+    },
+    "69": {
+        "name": "权杖6",
+        "info": {
+            "description": "获得胜利、成功得到回报、进展顺利、有望水到渠成",
+            "reverseDescription": "短暂的成功、骄傲自满、失去自信",
+            "imgUrl": "MinorArcana/Wands/权杖-06.png"
+        }
+    },
+    "70": {
+        "name": "权杖7",
+        "info": {
+            "description": "坚定信念、态度坚定、内芯的权衡与决断、相信自己的观点与能力",
+            "reverseDescription": "对自己的能力产生怀疑、缺乏自信与动力、缺乏意志力",
+            "imgUrl": "MinorArcana/Wands/权杖-07.png"
+        }
+    },
+    "71": {
+        "name": "权杖8",
+        "info": {
+            "description": "目标明确、一鼓作气、进展神速、趁热打铁、旅行",
+            "reverseDescription": "方向错误、行动不一致、急躁冲动、计划延误",
+            "imgUrl": "MinorArcana/Wands/权杖-08.png"
+        }
+    },
+    "72": {
+        "name": "权杖9",
+        "info": {
+            "description": "做好准备以应对困难、自我防御、蓄势待发、力量的对立",
+            "reverseDescription": "遭遇逆境、失去自信、士气低落",
+            "imgUrl": "MinorArcana/Wands/权杖-09.png"
+        }
+    },
+    "73": {
+        "name": "权杖10",
+        "info": {
+            "description": "责任感、内芯的热忱、过重的负担、过度劳累",
+            "reverseDescription": "难以承受的压力、高估自身的能力、调整自己的步调、逃避责任",
+            "imgUrl": "MinorArcana/Wands/权杖-10.png"
+        }
+    },
+    "74": {
+        "name": "权杖侍从",
+        "info": {
+            "description": "新计划的开始、尝试新事物、好消息传来",
+            "reverseDescription": "三分钟热度、规划太久导致进展不顺、坏消息传来",
+            "imgUrl": "MinorArcana/Wands/权杖侍从.png"
+        }
+    },
+    "75": {
+        "name": "权杖国王",
+        "info": {
+            "description": "行动力强、态度明确、运筹帷幄、领袖魅力",
+            "reverseDescription": "独断专行、严苛、态度傲慢",
+            "imgUrl": "MinorArcana/Wands/权杖国王.png"
+        }
+    },
+    "76": {
+        "name": "权杖王后",
+        "info": {
+            "description": "刚柔并济、热情而温和、乐观而活泼",
+            "reverseDescription": "情绪化、信心不足、热情消退、孤独",
+            "imgUrl": "MinorArcana/Wands/权杖皇后.png"
+        }
+    },
+    "77": {
+        "name": "权杖骑士",
+        "info": {
+            "description": "行动力、精力充沛、新的旅程、对现状不满足的改变",
+            "reverseDescription": "有勇无谋、鲁莽、行动延迟、计划不周、急躁",
+            "imgUrl": "MinorArcana/Wands/权杖骑士.png"
+        }
     }
 }

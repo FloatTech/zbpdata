@@ -13,6 +13,7 @@ import (
 	"unicode"
 	"unsafe"
 
+	"github.com/FloatTech/floatbox/process"
 	"github.com/fumiama/go-registry"
 	"github.com/wdvxdr1123/ZeroBot/utils/helper"
 )
@@ -45,18 +46,19 @@ func main() {
 		panic(err)
 	}
 	for i, fn := range files {
-		for c := 0; c < 5; c++ {
+		for c := 0; c < 16; c++ {
 			err = r.Set("data/"+fn, md5s[i])
 			fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
 			if err == nil {
 				break
 			}
-			if c >= 4 {
-				panic("ERROR:" + err.Error() + "max retry times exceeded")
+			if c >= 15 {
+				panic("ERROR:" + err.Error() + ", max retry times exceeded")
 			} else {
 				fmt.Println("ERROR:", err, ", retry times:", c)
 			}
 			_ = r.Close()
+			process.SleepAbout1sTo2s()
 			err = r.Connect()
 			if err != nil {
 				panic(err)

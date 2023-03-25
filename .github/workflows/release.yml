@@ -25,9 +25,7 @@ jobs:
         run: |
           echo "ls ./"
           ls
-          rm Wife/*.go Wife/*.md
-          mv Wife/wives/* Wife/
-          rm -rf Wife/wives Wife/.git
+          rm -rf Wife/*.go Wife/*.md Wife/.git
           echo "ls Wife/"
           ls Wife/
           go mod init updater

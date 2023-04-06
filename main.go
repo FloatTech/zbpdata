@@ -6,6 +6,7 @@ package main
 import (
 	"crypto/md5"
 	"encoding/hex"
+	"flag"
 	"fmt"
 	"io/fs"
 	"os"
@@ -19,6 +20,22 @@ import (
 )
 
 func main() {
+	c := flag.Bool("c", false, "check repo only")
+	flag.Parse()
+	es, err := fs.ReadDir(os.DirFS("./"), ".")
+	if err != nil {
+		panic(err)
+	}
+	for _, es := range es {
+		if es.IsDir() && es.Name()[0] != '.' {
+			if !unicode.IsUpper([]rune(es.Name())[0]) {
+				panic("failed: 文件夹 " + es.Name() + " 首字母必须为大写")
+			}
+		}
+	}
+	if *c {
+		return
+	}
 	var files []string
 	fs.WalkDir(os.DirFS("./"), ".", func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
@@ -41,7 +58,7 @@ func main() {
 		*(*uintptr)(unsafe.Add(unsafe.Pointer(&md5s[i]), unsafe.Sizeof(uintptr(0)))) = uintptr(16)
 	}
 	r := registry.NewRegedit("reilia.fumiama.top:32664", "", "fumiama", os.Getenv("REILIA_SPS"))
-	err := r.Connect()
+	err = r.Connect()
 	if err != nil {
 		panic(err)
 	}

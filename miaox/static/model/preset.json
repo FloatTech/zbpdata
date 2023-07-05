@@ -1,0 +1,447 @@
+{
+  "widgetList": [
+    {
+      "key": 26188,
+      "type": "grid",
+      "alias": "",
+      "category": "container",
+      "icon": "grid",
+      "cols": [
+        {
+          "type": "grid-col",
+          "category": "container",
+          "icon": "grid-col",
+          "internal": true,
+          "widgetList": [
+            {
+              "key": 86075,
+              "type": "input",
+              "alias": "",
+              "icon": "text-field",
+              "formItemFlag": true,
+              "options": {
+                "name": "key",
+                "label": "key",
+                "labelAlign": "",
+                "type": "text",
+                "defaultValue": "",
+                "placeholder": "请输入名称",
+                "columnWidth": "200px",
+                "size": "",
+                "labelWidth": null,
+                "labelHidden": true,
+                "labelWrap": false,
+                "readonly": false,
+                "disabled": false,
+                "hidden": false,
+                "clearable": true,
+                "showPassword": false,
+                "required": false,
+                "requiredHint": "",
+                "validation": "",
+                "validationHint": "",
+                "customClass": [],
+                "labelIconClass": null,
+                "labelIconPosition": "rear",
+                "labelTooltip": null,
+                "minLength": null,
+                "maxLength": null,
+                "showWordLimit": false,
+                "prefixIcon": "",
+                "suffixIcon": "",
+                "appendButton": false,
+                "appendButtonDisabled": false,
+                "buttonIcon": "custom-search",
+                "onCreated": "",
+                "onMounted": "",
+                "onInput": "",
+                "onChange": "",
+                "onFocus": "",
+                "onBlur": "",
+                "onValidate": "",
+                "onAppendButtonClick": ""
+              },
+              "id": "input55618"
+            }
+          ],
+          "options": {
+            "name": "gridCol57976",
+            "hidden": false,
+            "span": 6,
+            "offset": 0,
+            "push": 0,
+            "pull": 0,
+            "responsive": false,
+            "md": 12,
+            "sm": 12,
+            "xs": 12,
+            "customClass": []
+          },
+          "id": "grid-col-57976"
+        },
+        {
+          "type": "grid-col",
+          "category": "container",
+          "icon": "grid-col",
+          "internal": true,
+          "widgetList": [
+            {
+              "key": 85860,
+              "type": "select",
+              "icon": "select-field",
+              "formItemFlag": true,
+              "options": {
+                "name": "type",
+                "label": "select",
+                "labelAlign": "",
+                "defaultValue": "",
+                "placeholder": "",
+                "columnWidth": "200px",
+                "size": "",
+                "labelWidth": null,
+                "labelHidden": true,
+                "labelWrap": false,
+                "disabled": false,
+                "hidden": false,
+                "clearable": true,
+                "filterable": false,
+                "allowCreate": false,
+                "remote": false,
+                "automaticDropdown": false,
+                "multiple": false,
+                "multipleLimit": 0,
+                "dsEnabled": false,
+                "dsName": "",
+                "dataSetName": "",
+                "labelKey": "label",
+                "valueKey": "value",
+                "optionItems": [
+                  {
+                    "label": "openai-api",
+                    "value": "openai-api"
+                  },
+                  {
+                    "label": "openai-web",
+                    "value": "openai-web"
+                  },
+                  {
+                    "label": "claude",
+                    "value": "claude"
+                  },
+                  {
+                    "value": "bing",
+                    "label": "bing"
+                  }
+                ],
+                "required": false,
+                "requiredHint": "",
+                "validation": "",
+                "validationHint": "",
+                "customClass": [],
+                "labelIconClass": null,
+                "labelIconPosition": "rear",
+                "labelTooltip": null,
+                "onCreated": "",
+                "onMounted": "",
+                "onRemoteQuery": "",
+                "onChange": "",
+                "onFocus": "",
+                "onBlur": "",
+                "onValidate": ""
+              },
+              "id": "select11324"
+            }
+          ],
+          "options": {
+            "name": "gridCol17285",
+            "hidden": false,
+            "span": 5,
+            "offset": 0,
+            "push": 0,
+            "pull": 0,
+            "responsive": false,
+            "md": 12,
+            "sm": 12,
+            "xs": 12,
+            "customClass": []
+          },
+          "id": "grid-col-17285"
+        },
+        {
+          "type": "grid-col",
+          "category": "container",
+          "icon": "grid-col",
+          "internal": true,
+          "widgetList": [
+            {
+              "key": 107567,
+              "type": "button",
+              "icon": "button",
+              "formItemFlag": false,
+              "options": {
+                "name": "button48306",
+                "label": "搜索",
+                "columnWidth": "200px",
+                "size": "",
+                "displayStyle": "block",
+                "disabled": false,
+                "hidden": false,
+                "type": "",
+                "plain": false,
+                "round": false,
+                "circle": false,
+                "icon": null,
+                "customClass": [],
+                "onCreated": "",
+                "onMounted": "",
+                "onClick": "const dataTable = this.getWidgetRef('datatable97383')\ndataTable.loadDataFromDS()"
+              },
+              "id": "button48306"
+            }
+          ],
+          "options": {
+            "name": "gridCol73100",
+            "hidden": false,
+            "span": 2,
+            "offset": 0,
+            "push": 0,
+            "pull": 0,
+            "responsive": false,
+            "md": 12,
+            "sm": 12,
+            "xs": 12,
+            "customClass": []
+          },
+          "id": "grid-col-73100"
+        },
+        {
+          "type": "grid-col",
+          "category": "container",
+          "icon": "grid-col",
+          "internal": true,
+          "widgetList": [
+            {
+              "key": 107567,
+              "type": "button",
+              "icon": "button",
+              "formItemFlag": false,
+              "options": {
+                "name": "button34592",
+                "label": "新增",
+                "columnWidth": "200px",
+                "size": "",
+                "displayStyle": "block",
+                "disabled": false,
+                "hidden": false,
+                "type": "primary",
+                "plain": false,
+                "round": false,
+                "circle": false,
+                "icon": null,
+                "customClass": [],
+                "onCreated": "",
+                "onMounted": "",
+                "onClick": "const formRef = this.getFormRef()\nconsole.log(\"formRef\", formRef)\nformRef.$emit('replies', '/model/preset_edit.json', {})"
+              },
+              "id": "button34592"
+            }
+          ],
+          "options": {
+            "name": "gridCol41672",
+            "hidden": false,
+            "span": 2,
+            "offset": 0,
+            "push": 0,
+            "pull": 0,
+            "responsive": false,
+            "md": 12,
+            "sm": 12,
+            "xs": 12,
+            "customClass": ""
+          },
+          "id": "grid-col-41672"
+        }
+      ],
+      "options": {
+        "name": "grid53876",
+        "hidden": false,
+        "gutter": 12,
+        "colHeight": null,
+        "customClass": []
+      },
+      "id": "grid53876"
+    },
+    {
+      "key": 11884,
+      "type": "data-table",
+      "category": "container",
+      "icon": "data-table",
+      "widgetList": [],
+      "options": {
+        "name": "datatable97383",
+        "label": "data-table",
+        "hidden": false,
+        "rowSpacing": 8,
+        "tableHeight": "650px",
+        "tableWidth": "100%",
+        "customClass": [],
+        "stripe": true,
+        "showIndex": false,
+        "showCheckBox": true,
+        "showPagination": true,
+        "smallPagination": true,
+        "showSummary": false,
+        "border": true,
+        "tableSize": "small",
+        "tableColumns": [
+          {
+            "columnId": 1,
+            "prop": "key",
+            "label": "名称",
+            "width": "100",
+            "show": true,
+            "align": "left",
+            "fixed": "left",
+            "sortable": false
+          },
+          {
+            "columnId": 2,
+            "prop": "type",
+            "label": "AI类型",
+            "width": "120",
+            "show": true,
+            "align": "left",
+            "formatS": ""
+          },
+          {
+            "columnId": 1687247644902,
+            "show": true,
+            "prop": "chain",
+            "label": "处理器",
+            "width": "180"
+          },
+          {
+            "columnId": 3,
+            "prop": "content",
+            "label": "预设模版",
+            "width": "230",
+            "show": true,
+            "align": "left",
+            "formatS": ""
+          },
+          {
+            "columnId": 1687247586441,
+            "show": true,
+            "prop": "message",
+            "label": "消息模版",
+            "width": "230"
+          }
+        ],
+        "showButtonsColumn": true,
+        "buttonsColumnFixed": "right",
+        "buttonsColumnTitle": "操作",
+        "buttonsColumnWidth": 160,
+        "operationButtons": [
+          {
+            "name": "edit",
+            "label": "编辑",
+            "type": "text",
+            "size": "small",
+            "round": false,
+            "hidden": false,
+            "disabled": false
+          },
+          {
+            "name": "delete",
+            "label": "删除",
+            "type": "text",
+            "size": "small",
+            "round": false,
+            "hidden": false,
+            "disabled": false
+          }
+        ],
+        "pagination": {
+          "currentPage": 1,
+          "pageSizes": [
+            10,
+            15,
+            20,
+            30,
+            50,
+            100,
+            200
+          ],
+          "pageSize": 20,
+          "total": 366
+        },
+        "dsEnabled": true,
+        "dsName": "page",
+        "dataSetName": "",
+        "treeDataEnabled": false,
+        "rowKey": "key",
+        "childrenKey": "children",
+        "tableData": [],
+        "onCreated": "",
+        "onMounted": "",
+        "onPageSizeChange": "",
+        "onCurrentPageChange": "",
+        "onSelectionChange": "",
+        "onHideOperationButton": "",
+        "onDisableOperationButton": "",
+        "onGetOperationButtonLabel": "",
+        "onOperationButtonClick": "const formRef = this.getFormRef()\nconst DSV = this.getGlobalDsv()\nconst dataTable = this.getWidgetRef('datatable97383')\n\nif (buttonName == 'edit') {\n  formRef.$emit('replies', '/model/preset_edit.json', {...row})\n}\n\nif (buttonName == 'delete') {\n  DSV['HTTP'].delete(DSV['API_SERV'] + '/api/preset/del?id=' + row.key)\n    .then(({data: response}) => {\n      if (response.code != 200) {\n        this.$message.error(response.msg)\n      } else {\n        \n        this.$message.info('执行成功')\n        dataTable.loadDataFromDS()\n      }\n    })\n}",
+        "onHeaderClick": "",
+        "onRowClick": "",
+        "onRowDoubleClick": "",
+        "onCellClick": "",
+        "onCellDoubleClick": "",
+        "onGetRowClassName": "",
+        "onGetSpanMethod": ""
+      },
+      "id": "datatable97383"
+    }
+  ],
+  "formConfig": {
+    "modelName": "formData",
+    "refName": "vForm",
+    "rulesName": "rules",
+    "labelWidth": 80,
+    "labelPosition": "left",
+    "size": "",
+    "labelAlign": "label-left-align",
+    "cssCode": "",
+    "customClass": [],
+    "functions": "function delEmptyWithObj(obj) {\n  Object.keys(obj).forEach((key, idx) => {\n    if (obj[key] == \"\") {\n      delete obj[key]\n    }\n  })\n  return obj\n}",
+    "layoutType": "PC",
+    "jsonVersion": 3,
+    "dataSources": [
+      {
+        "dataSourceId": "ds93151",
+        "uniqueName": "page",
+        "requestURL": "DSV.API_SERV + \"/api/preset/page\"",
+        "requestURLType": "Variable",
+        "requestMethod": "post",
+        "description": "分页查询",
+        "headers": [
+          {
+            "name": "content-type",
+            "type": "String",
+            "value": "application/json"
+          }
+        ],
+        "params": [],
+        "data": [],
+        "configHandlerCode": "console.log('---- 请求配置 -----')\nconsole.log(config, isSandbox, DSV, VFR)\nconst formData = await VFR.getFormData()\nconfig.data = delEmptyWithObj(formData)\nreturn config",
+        "dataHandlerCode": "console.log('---- 数据处理 -----')\nconsole.log(result, isSandbox, DSV, VFR)\nconst datatable = VFR.getWidgetRef('datatable97383')\nconst { data } = result.data\ndatatable.setPagination({ total: data.total })\nreturn data.list",
+        "errorHandlerCode": "console.log('---- 错误处理 -----')\nconsole.log(error, isSandbox, DSV, $message, VFR)\n$message.error(error.message);",
+        "dataSetEnabled": false,
+        "dataSets": []
+      }
+    ],
+    "onFormCreated": "",
+    "onFormMounted": "",
+    "onFormDataChange": "",
+    "onFormValidate": ""
+  }
+}

@@ -67,7 +67,8 @@ func main() {
 		r := registry.NewRegedit(net.JoinHostPort(h, "32664"), "", "fumiama", os.Getenv("REILIA_SPS"))
 		err = r.Connect()
 		if err != nil {
-			panic(err)
+			fmt.Println(err)
+			continue
 		}
 		for i, fn := range files {
 			for c := 0; c < 16; c++ {

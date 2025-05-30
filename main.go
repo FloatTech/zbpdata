@@ -9,6 +9,7 @@ import (
 	"flag"
 	"fmt"
 	"io/fs"
+	"net"
 	"os"
 	"strings"
 	"unicode"
@@ -57,30 +58,37 @@ func main() {
 		*(*unsafe.Pointer)(unsafe.Pointer(&md5s[i])) = unsafe.Pointer(&buf)
 		*(*uintptr)(unsafe.Add(unsafe.Pointer(&md5s[i]), unsafe.Sizeof(uintptr(0)))) = uintptr(16)
 	}
-	r := registry.NewRegedit("reilia.fumiama.top:32664", "", "fumiama", os.Getenv("REILIA_SPS"))
-	err = r.Connect()
+	names, err := net.LookupAddr("reilia.fumiama.top")
 	if err != nil {
 		panic(err)
 	}
-	for i, fn := range files {
-		for c := 0; c < 16; c++ {
-			err = r.Set("data/"+fn, md5s[i])
-			fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
-			if err == nil {
-				break
-			}
-			if c >= 15 {
-				panic("ERROR:" + err.Error() + ", max retry times exceeded")
-			} else {
-				fmt.Println("ERROR:", err, ", retry times:", c)
-			}
-			_ = r.Close()
-			process.SleepAbout1sTo2s()
-			err = r.Connect()
-			if err != nil {
-				panic(err)
+	for _, nm := range names {
+		fmt.Println("推送到:", nm)
+		r := registry.NewRegedit(net.JoinHostPort(nm, "32664"), "", "fumiama", os.Getenv("REILIA_SPS"))
+		err = r.Connect()
+		if err != nil {
+			panic(err)
+		}
+		for i, fn := range files {
+			for c := 0; c < 16; c++ {
+				err = r.Set("data/"+fn, md5s[i])
+				fmt.Println("set", "data/"+fn, "=", hex.EncodeToString(helper.StringToBytes(md5s[i])))
+				if err == nil {
+					break
+				}
+				if c >= 15 {
+					panic("ERROR:" + err.Error() + ", max retry times exceeded")
+				} else {
+					fmt.Println("ERROR:", err, ", retry times:", c)
+				}
+				_ = r.Close()
+				process.SleepAbout1sTo2s()
+				err = r.Connect()
+				if err != nil {
+					panic(err)
+				}
 			}
 		}
+		_ = r.Close()
 	}
-	_ = r.Close()
 }

@@ -58,13 +58,13 @@ func main() {
 		*(*unsafe.Pointer)(unsafe.Pointer(&md5s[i])) = unsafe.Pointer(&buf)
 		*(*uintptr)(unsafe.Add(unsafe.Pointer(&md5s[i]), unsafe.Sizeof(uintptr(0)))) = uintptr(16)
 	}
-	names, err := net.LookupAddr("reilia.fumiama.top")
+	hosts, err := net.LookupHost("reilia.fumiama.top")
 	if err != nil {
 		panic(err)
 	}
-	for _, nm := range names {
-		fmt.Println("推送到:", nm)
-		r := registry.NewRegedit(net.JoinHostPort(nm, "32664"), "", "fumiama", os.Getenv("REILIA_SPS"))
+	for _, h := range hosts {
+		fmt.Println("推送到:", h)
+		r := registry.NewRegedit(net.JoinHostPort(h, "32664"), "", "fumiama", os.Getenv("REILIA_SPS"))
 		err = r.Connect()
 		if err != nil {
 			panic(err)

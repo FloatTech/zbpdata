@@ -3,5 +3,4 @@ cache
 /VtbQuotation/store
 .DS_Store
 .vscode
-/[a-z]*
 !/Tarot

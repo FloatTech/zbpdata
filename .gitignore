@@ -1,4 +1,4 @@
-[a-z]*/
+/[a-z]*/
 cache
 /SetuTime/search
 /VtbQuotation/store

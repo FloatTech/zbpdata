@@ -1,7 +1,7 @@
+/[a-z]*/
 cache
 /SetuTime/search
 /VtbQuotation/store
 .DS_Store
 .vscode
-/[a-z]*
 !/Tarot
